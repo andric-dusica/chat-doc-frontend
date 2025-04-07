@@ -1,0 +1,25 @@
+::-webkit-scrollbar {
+    width: 12px; }
+ 
+::-webkit-scrollbar-track {
+background: transparent; }
+
+::-webkit-scrollbar-thumb {
+background: var(--Text-AW-Type-6, #555C70);
+border-radius: 150px; }
+
+::-webkit-scrollbar-thumb:hover {
+background: #666; }
+
+.main-menu {
+max-height: 800px;
+overflow-y: auto;
+overflow-x: hidden; }
+
+.sub-menu.is-open, .sub-sub-menu.is-open {
+opacity: 1;
+max-height: 100%; }
+
+html {
+scrollbar-width: thin;
+scrollbar-color: var(--Text-AW-Type-6, #555C70) transparent; }

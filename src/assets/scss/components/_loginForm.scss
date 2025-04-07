@@ -1,0 +1,405 @@
+.wrapper {
+    display: flex;
+    width: 412px;
+    padding: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background-color: #fff;
+    color: #09132E;
+  }
+  
+  .wrapper form {
+    display: grid;
+    gap: 24px;
+    width: 100%;
+  }
+  
+  .wrapper .logo_form {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .wrapper .login_input {
+    position: relative;
+    width: 100%;
+    display: grid;
+    gap: 4px;
+  }
+  
+  .wrapper .login_input .password_show {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+  }
+  
+  .wrapper .login_input .password_show span {
+    color: var(--Text-AW-Type-6, #555C70);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; 
+    padding-right: 12px;
+    cursor: pointer;
+  }
+  
+  .wrapper .login_input label {
+    padding: 0 12px;
+  }
+  
+  .wrapper .login_input p {
+    padding: 0 12px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+  }
+  
+  .login_input input {
+    width: 100%;
+    height: 36px;
+    display: flex;
+    padding: 8px 12px;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 18px;
+    border: 1px solid var(--Text-Aw-Type-3, #C9CDD6);
+    color: var(--Text-AW-Type-5, #9095A3);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+  }
+  
+  .wrapper button {
+    display: flex;
+    height: 36px;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 18px;
+    background: #2D5DE0;
+    cursor: pointer;
+  
+    color: var(--Text-AW-White, #FFF);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .wrapper button:hover {
+    background-color: #001652;
+  }
+  
+  .wrapper button:focus {
+    outline: none;
+    box-shadow: 
+      0 0 0 1px #2D5DE0,
+      0 0 0 4px #FFF, 
+      0 0 0 5px #2D5DE0;
+  }
+  
+  .wrapper .forgot_remember {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+  }
+  
+  .wrapper .forgot_remember .forgot_password {
+    text-decoration-line: underline;
+  }
+  
+  .wrapper .forgot_remember .forgot_password:hover {
+    color: var(--Text-AW-Type-8, #09132E);
+    text-decoration-line: underline;
+  }
+  
+  .wrapper .forgot_remember .forgot_password:active {
+    color: var(--border-AW-Prim-4, #11338F);
+    text-decoration: underline;
+  }
+  
+  .wrapper .forgot_remember .stay_logged {
+    display: flex;
+    align-items: flex-start;
+    gap: 4px;
+    cursor: pointer;
+  
+    justify-content: center;
+    align-items: center;
+  
+    color: var(--Text-AW-Type-6, #555C70);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; 
+    letter-spacing: 0.5px;
+  }
+  
+  .wrapper .forgot_remember .stay_logged input {
+    cursor: pointer;
+  }
+  
+  .input-error:focus {
+    outline: 1px solid red;
+  }
+  
+  .input-error {
+    border: 1px solid var(--Red, #D4440F);
+    background: rgba(212, 68, 15, 0.10);
+  }
+  
+  .wrapper .login_input .password_show span.password-toggle:hover {
+    color: #09132E; 
+  }
+  
+  /* Stil za custom checkbox */
+  .checkbox_logged {
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    border: 2px solid var(--Text-AW-Type-5, #9095A3);
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .checkbox_logged.checked {
+    border: 2px solid #2D5DE0;
+    background-color: transparent;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+  
+  .checkbox_logged.checked .checkmark {
+    display: block;
+    font-size: 14px;
+    color: #2D5DE0;
+  }
+  
+  .checkbox_logged:focus {
+    outline: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    border: 2px solid var(--AW-Prim-0, #2D5DE0);
+    background: var(--AW-Prim-1, #EBF0FF);
+  }
+  
+  .checkbox_logged:hover {
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    border: 2px solid var(--Text-AW-Type-6, #555C70);
+  }
+  
+  
+  /* reset pasword */
+  .password_wrapper {
+    display: flex;
+    width: 412px;
+    padding: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background-color: #fff;
+    color: #09132E;
+  }
+  
+  .password_wrapper form {
+    display: grid;
+    gap: 24px;
+    width: 100%;
+  }
+  
+  .password_wrapper button {
+    display: flex;
+    height: 36px;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 18px;
+    background: #2D5DE0;
+    cursor: pointer;
+  
+    color: var(--Text-AW-White, #FFF);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .password_wrapper button:hover {
+    background-color: #001652;
+  }
+  
+  .password_wrapper button:focus {
+    outline: none;
+    box-shadow: 
+      0 0 0 1px #2D5DE0,
+      0 0 0 4px #FFF, 
+      0 0 0 5px #2D5DE0;
+  }
+  
+  .reset_password {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+  }
+  
+  
+  .reset_password h1 {
+    color: #000;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Ubuntu', sans-serif !important;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  
+  .reset_password p {
+    align-self: stretch;
+    color: #000;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Source Sans 3" !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+  }
+  
+  .password_wrapper .password_submit label {
+    padding: 0 12px;
+  }
+  
+  .password_wrapper .password_submit p {
+    padding: 0 12px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+  }
+  
+  .password_wrapper .password_submit input {
+    width: 100%;
+    height: 36px;
+    display: flex;
+    padding: 8px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 18px;
+    border: 1px solid var(--Text-Aw-Type-3, #C9CDD6);
+    color: var(--Text-AW-Type-5, #9095A3);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+  }
+  
+  
+  
+  .login_back {
+    color: var(--Text-AW-Type-6, #555C70);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Source Sans 3";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    text-decoration-line: underline;
+  }
+  
+  .login_back:hover {
+    color: var(--Text-AW-Type-8, #09132E);
+    text-decoration-line: underline;
+  }
+  
+  .login_back:active {
+    color: var(--border-AW-Prim-4, #11338F);
+    text-decoration: underline;
+  }
+  
+  .back_to_login {
+    text-align: center;
+  }
+  
+  .back_to_login p {
+    align-self: stretch;
+    color: var(--Text-AW-Type-8, #09132E);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Source Sans 3";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; 
+    letter-spacing: 0.5px;
+  }
+  
+  .back_to_login .contact_us {
+    align-self: stretch;
+    color: var(--AW-Prim-0, #2D5DE0);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Source Sans 3";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; 
+    letter-spacing: 0.5px;
+    text-decoration: none;
+  }
+  
+  .back_to_login .contact_us:hover {
+    color: var(--AW-Prim-0, #001652);
+  }
+  
+  .back_to_login .contact_us:active {
+    color: var(--AW-Prim-0, #11338F);
+  }

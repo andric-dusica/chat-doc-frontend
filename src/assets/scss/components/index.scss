@@ -1,0 +1,56 @@
+@import './scroll';
+@import './sidebar';
+@import './sessionNav';
+@import './chat';
+@import './persona';
+@import './fileExplorer';
+@import './noteped';
+@import './userManagment';
+@import './account';
+@import "~react-pdf/dist/esm/Page/AnnotationLayer.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Times+New+Roman&family=Arial&family=Courier+New&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans 3', sans-serif !important;
+  }
+  
+  body {
+    background-color: #9095A3;
+    font-family: 'Source Sans 3', sans-serif !important;
+    min-height: 100vh;
+  }
+  
+  .body_center {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+    margin: 0 auto;
+  }
+  
+  .content {
+    transition: margin-left 0.3s ease; 
+    margin-left: 204px; 
+    background-color: #001652;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .body-sidebar-collapsed .content {
+    margin-left: 52px;
+    transition: margin-left 0.7s ease; 
+  }
+
+  .content.no-sidebar {
+
+    margin: 0 auto !important;
+
+    .side-menu {
+      display: none;
+    }
+
+  }

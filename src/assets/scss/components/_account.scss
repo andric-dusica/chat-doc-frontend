@@ -1,0 +1,210 @@
+
+.my-account-edit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.edit-account {
+    cursor: pointer;
+    display: flex;
+    padding-top: 13px;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+
+    color: var(--Color-Grey-AW-Type-6, #555C70);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Source Sans 3";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px; 
+    letter-spacing: 0.5px;
+}
+
+.account-info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    align-self: stretch;
+
+    .title-info {
+        color: var(--Color-Grey-AW-Type-5, #9095A3);
+        font-family: "Source Sans 3";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px; 
+        letter-spacing: 0.5px;
+    }
+
+    .account-content {
+        color: var(--Text-Black, #000);
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: "Source Sans 3";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; 
+        letter-spacing: 0.5px;
+    }
+}
+
+.admin-btn {
+    display: flex;
+    padding: 3px 8px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 4px;
+    background: var(--Color-Blue-AW-Blue-2, #BACAF5);
+    border: none;
+    cursor: pointer;
+}
+
+.account-info.line {
+    border-bottom: 1px solid #C9CDD6;
+    margin: 20px 0 5px 0;
+}
+
+.discard-account {
+    cursor: pointer;
+    margin-left: auto;
+    display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 18px;
+    border: 1px solid var(--Text-AW-Type-8, #09132E);
+    background: var(--Text-AW-White, #FFF);
+    color: var(--Color-Grey-AW-Type-7, #2B3247);
+    text-align: center;
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: "Source Sans 3";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.account-info.password {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+    flex-direction: row;
+}
+.show-password {
+    cursor: pointer;
+}
+
+.account-content-textarea {
+    display: flex;
+    padding: 8px 12px;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 18px;
+    border: 1px solid var(--Text-Aw-Type-3, #C9CDD6);
+    background: var(--Text-AW-White, #FFF);
+    resize: none;
+    overflow: auto;
+    width: 100%;
+
+    color: var(--Color-Grey-AW-Type-8, #09132E);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Source Sans 3";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; 
+    letter-spacing: 0.5px;
+}
+
+.account-row {
+    width: 100%;
+}
+
+.show-password {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+    color: var(--Text-AW-Type-6, var(--Color-Grey-AW-Type-6, #555C70));
+    font-family: "Source Sans 3";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; 
+    letter-spacing: 0.5px;
+}
+
+.password-field {
+    width: 100%;
+}
+
+.save-changes-btn {
+    cursor: pointer;
+    display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 18px;
+    background: var(--Color-Grey-AW-Type-5, #9095A3);
+    border: none;
+
+    color: var(--Color-White-White, #FFF);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Source Sans 3";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    margin-left: auto;
+}
+
+.cancel-changes-btn {
+    cursor: pointer;
+    display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 18px;
+    border: 1px solid var(--Text-AW-Type-8, #09132E);
+    background: var(--Text-AW-White, #FFF);
+
+    color: var(--Color-Grey-AW-Type-7, #2B3247);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Source Sans 3";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; 
+}
+
+.btns-account {
+    display: flex;
+    width: 100%;
+}
+
+.modal-content-um.organization {
+    background-color: #fff;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);
+    display: flex;
+    width: 506px;
+    min-height: fit-content;
+    padding: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    flex-shrink: 0;
+    border-radius: 12px;
+}
