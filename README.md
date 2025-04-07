@@ -45,22 +45,22 @@ A modern, interactive frontend for document-centric AI chat interactions.
 ## 📸 Screenshots
 
 ### 🧭 Dashboard / File Explorer
-![File Explorer](./assets/screenshots/dashboard.png)
+![File Explorer](./src/assets/screenshots/dashboard.png)
 
 ### 💬 Chat Interface
-![Chat Interface](./assets/screenshots/chat.png)
+![Chat Interface](./src/assets/screenshots/chat.png)
 
 ### 👤 Account Management
-![Account](./assets/screenshots/account.png)
+![Account](./src/assets/screenshots/account.png)
 
 ### 📝 Notepad with Export
-![Notepad](./assets/screenshots/notepad.png)
+![Notepad](./src/assets/screenshots/notepad.png)
 
 ### 🎯 Prompt Explorer
-![Prompts](./assets/screenshots/prompts.png)
+![Prompts](./src/assets/screenshots/prompts.png)
 
 ### 🎭 Persona Explorer
-![Personas](./assets/screenshots/personas.png)
+![Personas](./src/assets/screenshots/personas.png)
 
 ---
 
