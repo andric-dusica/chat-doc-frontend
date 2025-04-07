@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+# ChatDoc-Inspired React Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A fully-featured, internal-use React frontend inspired by ChatDoc functionality. This app includes a PDF viewer, session-based chat with personas, a styled notepad, and an interactive prompt explorer. Designed with scalability in mind through modular and reusable components.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Tech Stack
 
-### `npm start`
+- React
+- SCSS Modules
+- React Context API
+- HTML/CSS
+- JavaScript (ES6+)
+- FileSaver.js (for export)
+- [html-to-docx](https://github.com/evidenceprime/html-to-docx)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🧠 Overview
 
-### `npm test`
+A modern, interactive frontend for document-centric AI chat interactions.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 📁 Upload and browse files/folders
+- 📄 Preview and search PDF documents
+- 💬 Chat interface with loading animation
+- 🧠 Persona-based prompts
+- 📝 Custom notepad with export to PDF/DOCX
+- 👤 User management and session flow
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🔧 Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- 📂 File Explorer with folder management
+- 🔍 PDF Viewer with keyword search
+- 💬 Chat Bubble with AI-style interaction
+- ✨ Loading animations for bot response
+- 🎭 Persona and Prompt Explorers
+- 📝 Rich Text Notepad with styling options
+- 📤 Export to `.pdf` and `.docx`
+- 🔐 User role-based access (Admin/User)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 📸 Screenshots
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 🧭 Dashboard / File Explorer
+![File Explorer](./assets/screenshots/dashboard.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 💬 Chat Interface
+![Chat Interface](./assets/screenshots/chat.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 👤 Account Management
+![Account](./assets/screenshots/account.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 📝 Notepad with Export
+![Notepad](./assets/screenshots/notepad.png)
 
-## Learn More
+### 🎯 Prompt Explorer
+![Prompts](./assets/screenshots/prompts.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 🎭 Persona Explorer
+![Personas](./assets/screenshots/personas.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 📦 Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+git clone https://github.com/your-username/chatdoc-frontend.git
+cd chatdoc-frontend
+npm install
+npm start
+```
 
-### Analyzing the Bundle Size
+Open in browser: http://localhost:3000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🗂️ Project Structure
+```bash
+chatdoc-frontend/
+├── public/
+├── src/
+│   ├── assets/               # Images & logos
+│   ├── components/           # Core UI components (Chat, Viewer, etc.)
+│   ├── inputs/               # Inputs & reusable UI
+│   ├── dashboard/            # Dashboard views
+│   ├── contexts/             # React Context Providers
+│   └── App.js                # Entry component
+├── package.json
+└── README.md
+```
+## 📄 License
+This project is private and not licensed for public use or distribution. For demonstration/CV purposes only.
