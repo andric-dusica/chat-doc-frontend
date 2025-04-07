@@ -21,10 +21,15 @@ A fully-featured, internal-use React frontend inspired by ChatDoc functionality.
 A modern, interactive frontend for document-centric AI chat interactions.
 
 📁 Upload and browse files/folders
+
 📄 Preview and search PDF documents
+
 💬 Chat interface with loading animation
+
 🧠 Persona-based prompts
+
 📝 Custom notepad with export to PDF/DOCX
+
 👤 User management and session flow
 
 ---
@@ -32,12 +37,19 @@ A modern, interactive frontend for document-centric AI chat interactions.
 ## 🔧 Features
 
 📂 File Explorer with folder management
+
 🔍 PDF Viewer with keyword search
+
 💬 Chat Bubble with AI-style interaction
+
 ✨ Loading animations for bot response
+
 🎭 Persona and Prompt Explorers
+
 📝 Rich Text Notepad with styling options
+
 📤 Export to `.pdf` and `.docx`
+
 🔐 User role-based access (Admin/User)
 
 ---
